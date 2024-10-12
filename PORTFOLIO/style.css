@@ -85,7 +85,9 @@ header {
 }
 
 .trilho.dark{
-    background-color: white;
+    border: 2px solid ;
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .menu li {
@@ -207,7 +209,7 @@ body.dark button:hover{
 }
 
 .linguagem1 li img, .linguagem2 li img {
-    width: 25px;
+    width: 18px;
     height: auto;
     margin-right: 10px; /* Espaço entre a imagem e o texto */
     vertical-align: middle; /* Alinhamento vertical da imagem */
@@ -238,10 +240,18 @@ body.dark button:hover{
 }
 
 .menu_contato li img {
-    width: 25px;
     height: auto;
     margin-right: 10px; /* Espaço entre a imagem e o texto */
     vertical-align: middle; /* Alinhamento vertical da imagem */
+}
+
+.linkedin{
+    margin-bottom: 4px;
+    width: 23px;
+}
+
+.email{
+    width: 25px;
 }
 
 .contact {
