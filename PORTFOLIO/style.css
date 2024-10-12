@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0; /* espaçamento externo */
+    padding: 0; /* espaçamento interno */
+    box-sizing: border-box; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 60px; 
+}
+
+body.dark{
+    background-color: black;
+}
+
+body.dark p, body.dark h1, body.dark li, body.dark h2, body.dark h7{
+    color: white;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1000; /* Certifique-se de que o menu fique acima de outros elementos */
+    display: flex;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+
+}
+
+.titulo {
+    margin-left: 30px;
+    font-size: 35px;
+    font-weight: 550;
+}
+
+.menu {
+    display: flex;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.trilho{
+    border-radius: 150px;
+    width: 70px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.907);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.indicador{
+    border-radius:50%;
+    width: 30px;
+    height: 30px;
+    background-color: #0097b2;
+    transform: scale(.8);
+    transition: 0.5s;
+}
+
+.trilho.dark .indicador{
+    margin-left: 39px;
+}
+
+.trilho.dark{
+    background-color: white;
+}
+
+.menu li {
+    margin: 20px;
+    cursor: pointer;
+    display: flex; 
+    align-items: center;
+}
+
+.menu li:hover {
+    color: #0097b2;
+}
+
+.menu li img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+    vertical-align: middle; /* Alinhamento vertical da imagem */
+}
+
+.home, .works {
+    position: relative;
+    display: flex;
+    height: 100vh; /* TELA TODA - ALTURA */
+    width: 100vw; /* TELA TODA - LARGURA */
+    justify-content:center;
+    align-items: center;
+}
+
+span {
+    color: #0097b2;
+}
+
+.perfil {
+    height: 450px;
+    width: 450px;
+    margin-left: 150px;
+    border-radius: 15px;
+    margin-right: 25px;
+}
+
+button { 
+    color: #0097b2;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    cursor: pointer;
+    border-color: #0097b2;
+    border: solid 1px;
+    padding: 7px 50px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+button:hover {
+    background-color: #0097b2;
+    color: white;
+    border-color: #0097b2;
+}
+
+body.dark button:hover{
+    color: black;
+}
+
+
+
+.mini_menu {
+    display: flex;
+    justify-content: center;
+}
+
+.about, .skills, .contact, .works{
+    position: relative;
+    height: 100vh; /* TELA TODA - ALTURA */
+    width: 100vw; /* TELA TODA - LARGURA */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresentacao {
+    display: flex;
+    padding: 0px 25px;
+    align-items: center;
+}
+
+.apresentacao p{
+    margin-right: 150px;
+}
+
+.container {
+    display: flex;
+    margin: 80px;
+}
+
+.front, .back{
+    margin: 0px 15px;
+    border: solid 2px;
+    border-color:#0097b2;
+    padding: 30px 80px;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.linguagem1, .linguagem2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    grid-column-gap: 100px;
+    font-weight: bold;
+}
+
+.linguagem1 li, .linguagem2 li {
+    display: flex; 
+    align-items: center;
+    margin: 15px;
+}
+
+.linguagem1 li img, .linguagem2 li img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+    vertical-align: middle; /* Alinhamento vertical da imagem */
+}
+
+.container2{
+    display: flex;
+}
+
+.works p{
+    margin-top: 30px;
+}
+
+
+.menu_contato {
+    display: flex;
+    margin-top: 30px;
+    padding: 20px;
+    border: solid 2px;
+    border-color: #0097b2;
+    border-radius: 30px;
+}
+
+.menu_contato li {
+    display: flex; 
+    align-items: center;
+    margin: 0px 25px;
+}
+
+.menu_contato li img {
+    width: 25px;
+    height: auto;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+    vertical-align: middle; /* Alinhamento vertical da imagem */
+}
+
+.contact {
+    position: relative;
+    height: 70vh; /* TELA TODA - ALTURA */
+    width: 100vw; /* TELA TODA - LARGURA */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    position: relative;
+    background-color: black;
+    color: white;
+    height: 18vh; /* TELA TODA - ALTURA */
+    width: 100vw; /* TELA TODA - LARGURA */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rede_sociais {
+    display: flex;
+}
+
+.rede_sociais li {
+    display: flex; 
+    align-items: center;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.rede_sociais li img {
+    margin-left: 20px;
+    width: 35px;
+    height: auto;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+    vertical-align: middle; /* Alinhamento vertical da imagem */
+}
+
+footer p {
+    margin-top: 15px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.work{
+    border: 2px solid;
+    border-color: #0097b2;
+    border-radius: 30px;
+    padding: 25px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.work img{
+    width: 350px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+.work h2{
+    margin: 10px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7); /* Fundo semi-transparente */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    display: none; /* Inicialmente escondido */
+    z-index: 999; /* Sobrepõe todo o conteúdo */
+}
+
+.window{
+    position: fixed;
+    width: 50vw;
+    height: 50vh; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    display: none;
+    font-size: 18px;
+    padding: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .window{
+    background-color: black;
+}
+
